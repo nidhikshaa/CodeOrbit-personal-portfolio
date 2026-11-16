@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E0F5" />
+      <stop offset="50%" stop-color="#FFFBF8" />
+      <stop offset="100%" stop-color="#DFECF7" />
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34313A" />
+      <stop offset="100%" stop-color="#232128" />
+    </linearGradient>
+    <filter id="shadowCg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#34313A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#bgCg)" rx="16" />
+
+  <g filter="url(#shadowCg)" transform="translate(60, 45)">
+    <!-- Device Frame / Multi-Device Workspace -->
+    <rect width="480" height="290" rx="12" fill="#FFFFFF" stroke="rgba(197, 139, 138, 0.3)" stroke-width="1.5" />
+    
+    <!-- Header -->
+    <rect width="480" height="40" rx="12" fill="#F8F3F7" />
+    <circle cx="24" cy="20" r="5" fill="#F7DDE5" stroke="#C58B8A" stroke-width="0.8" />
+    <circle cx="40" cy="20" r="5" fill="#F9E4D5" stroke="#C58B8A" stroke-width="0.8" />
+    <circle cx="56" cy="20" r="5" fill="#DFECF7" stroke="#C58B8A" stroke-width="0.8" />
+    
+    <text x="80" y="25" font-family="'Playfair Display', serif" font-weight="700" font-size="13" fill="#34313A">Cognifyz Web Dev Internship</text>
+    <rect x="290" y="12" width="130" height="18" rx="9" fill="#E8E0F5" opacity="0.9" />
+    <text x="302" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#34313A">Frontend Tasks &amp; Labs</text>
+
+    <!-- Side-by-side: Code editor snippet + Live Responsive Preview -->
+    <!-- Code Editor Box -->
+    <rect x="20" y="55" width="225" height="215" rx="8" fill="url(#codeGrad)" />
+    <!-- Editor top bar -->
+    <rect x="20" y="55" width="225" height="22" rx="8" fill="#28262E" />
+    <text x="32" y="70" font-family="'Courier New', monospace" font-size="9" fill="#F7DDE5">tasks/interactive-ui.js</text>
+    
+    <!-- Code lines -->
+    <text x="32" y="96" font-family="'Courier New', monospace" font-size="8.5" fill="#C58B8A">// Cognifyz Web Tasks</text>
+    <text x="32" y="112" font-family="'Courier New', monospace" font-size="8.5" fill="#DFECF7">const app = {</text>
+    <text x="44" y="128" font-family="'Courier New', monospace" font-size="8.5" fill="#F9E4D5">  theme: "Modern Pastel",</text>
+    <text x="44" y="144" font-family="'Courier New', monospace" font-size="8.5" fill="#F9E4D5">  responsive: true,</text>
+    <text x="44" y="160" font-family="'Courier New', monospace" font-size="8.5" fill="#F7DDE5">  initUI() {</text>
+    <text x="56" y="176" font-family="'Courier New', monospace" font-size="8.5" fill="#FFFBF8">    renderComponents();</text>
+    <text x="56" y="192" font-family="'Courier New', monospace" font-size="8.5" fill="#C58B8A">    attachEvents();</text>
+    <text x="44" y="208" font-family="'Courier New', monospace" font-size="8.5" fill="#F7DDE5">  }</text>
+    <text x="32" y="224" font-family="'Courier New', monospace" font-size="8.5" fill="#DFECF7">};</text>
+    <text x="32" y="244" font-family="'Courier New', monospace" font-size="8.5" fill="#A46968">app.initUI();</text>
+
+    <!-- Live Preview Box -->
+    <rect x="260" y="55" width="200" height="215" rx="8" fill="#FFFBF8" stroke="#EFE4DF" stroke-width="1.2" />
+    <rect x="260" y="55" width="200" height="24" rx="8" fill="#FBF7F5" />
+    <circle cx="274" cy="67" r="3.5" fill="#C58B8A" />
+    <text x="286" y="71" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#34313A">Component Preview</text>
+
+    <!-- Mini Component 1: Interactive Card -->
+    <rect x="272" y="90" width="176" height="52" rx="6" fill="#F7DDE5" opacity="0.45" />
+    <circle cx="292" cy="116" r="12" fill="#F7DDE5" />
+    <rect x="312" y="104" width="80" height="8" rx="3" fill="#34313A" />
+    <rect x="312" y="118" width="110" height="6" rx="2" fill="#6C6674" />
+
+    <!-- Mini Component 2: Button & Input -->
+    <rect x="272" y="152" width="176" height="48" rx="6" fill="#DFECF7" opacity="0.4" />
+    <rect x="282" y="166" width="95" height="18" rx="4" fill="#FFFFFF" stroke="#DFECF7" stroke-width="1" />
+    <rect x="385" y="166" width="53" height="18" rx="4" fill="#C58B8A" />
+    <text x="397" y="178" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#FFFBF8">Submit</text>
+
+    <!-- Mini Component 3: Badges -->
+    <rect x="272" y="210" width="48" height="16" rx="8" fill="#E8E0F5" />
+    <rect x="326" y="210" width="48" height="16" rx="8" fill="#F9E4D5" />
+    <rect x="380" y="210" width="48" height="16" rx="8" fill="#DFECF7" />
+  </g>
+</svg>

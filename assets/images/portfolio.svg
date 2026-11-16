@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7DDE5" />
+      <stop offset="50%" stop-color="#FFFBF8" />
+      <stop offset="100%" stop-color="#F9E4D5" />
+    </linearGradient>
+    <filter id="shadowPf" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#34313A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#bgPf)" rx="16" />
+
+  <g filter="url(#shadowPf)" transform="translate(60, 45)">
+    <!-- Portfolio Window -->
+    <rect width="480" height="290" rx="12" fill="#FFFBF8" stroke="rgba(197, 139, 138, 0.35)" stroke-width="1.5" />
+    
+    <!-- Top Nav Mockup -->
+    <rect width="480" height="36" rx="12" fill="#FAF5F2" />
+    <circle cx="24" cy="18" r="4.5" fill="#F7DDE5" stroke="#C58B8A" stroke-width="0.7" />
+    <circle cx="38" cy="18" r="4.5" fill="#F9E4D5" stroke="#C58B8A" stroke-width="0.7" />
+    <circle cx="52" cy="18" r="4.5" fill="#DFECF7" stroke="#C58B8A" stroke-width="0.7" />
+    
+    <text x="75" y="22" font-family="'Playfair Display', serif" font-weight="700" font-size="11" fill="#34313A">Nidhikshaa M</text>
+    <text x="310" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#6C6674">About  ·  Skills  ·  Projects  ·  Experience</text>
+
+    <!-- Hero Mockup inside -->
+    <!-- Profile Avatar circle -->
+    <circle cx="240" cy="85" r="26" fill="#F7DDE5" stroke="#C58B8A" stroke-width="1.5" />
+    <text x="240" y="90" font-family="'Playfair Display', serif" font-size="13" font-weight="700" fill="#A46968" text-anchor="middle">NM</text>
+    
+    <text x="240" y="128" font-family="'Playfair Display', serif" font-size="13" font-weight="700" fill="#34313A" text-anchor="middle">An Aspiring Web Developer</text>
+    <text x="240" y="144" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#6C6674" text-anchor="middle">Web Development | Creative Design | Technology Enthusiast</text>
+
+    <!-- Mini Buttons -->
+    <rect x="180" y="156" width="56" height="18" rx="9" fill="#C58B8A" />
+    <text x="208" y="168" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="600" fill="#FFFBF8" text-anchor="middle">Projects</text>
+    
+    <rect x="244" y="156" width="56" height="18" rx="9" fill="#FFFBF8" stroke="#C58B8A" stroke-width="1" />
+    <text x="272" y="168" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="600" fill="#34313A" text-anchor="middle">Contact</text>
+
+    <!-- Mini Section Cards below -->
+    <rect x="35" y="195" width="125" height="75" rx="8" fill="#FDF8F6" stroke="#F7DDE5" stroke-width="1" />
+    <rect x="45" y="207" width="40" height="7" rx="2" fill="#C58B8A" />
+    <rect x="45" y="220" width="105" height="5" rx="2" fill="#34313A" opacity="0.6" />
+    <rect x="45" y="230" width="85" height="5" rx="2" fill="#6C6674" opacity="0.4" />
+    <rect x="45" y="248" width="55" height="12" rx="4" fill="#E8E0F5" />
+
+    <rect x="177" y="195" width="125" height="75" rx="8" fill="#FAF6FA" stroke="#E8E0F5" stroke-width="1" />
+    <rect x="187" y="207" width="40" height="7" rx="2" fill="#A46968" />
+    <rect x="187" y="220" width="105" height="5" rx="2" fill="#34313A" opacity="0.6" />
+    <rect x="187" y="230" width="85" height="5" rx="2" fill="#6C6674" opacity="0.4" />
+    <rect x="187" y="248" width="55" height="12" rx="4" fill="#F9E4D5" />
+
+    <rect x="320" y="195" width="125" height="75" rx="8" fill="#F5F9FD" stroke="#DFECF7" stroke-width="1" />
+    <rect x="330" y="207" width="40" height="7" rx="2" fill="#C58B8A" />
+    <rect x="330" y="220" width="105" height="5" rx="2" fill="#34313A" opacity="0.6" />
+    <rect x="330" y="230" width="85" height="5" rx="2" fill="#6C6674" opacity="0.4" />
+    <rect x="330" y="248" width="55" height="12" rx="4" fill="#F7DDE5" />
+  </g>
+</svg>

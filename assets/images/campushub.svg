@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFECF7" />
+      <stop offset="50%" stop-color="#FFFBF8" />
+      <stop offset="100%" stop-color="#E8E0F5" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FDF8F6" />
+    </linearGradient>
+    <filter id="shadowCh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#34313A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="380" fill="url(#bgCh)" rx="16" />
+
+  <!-- Subtle grid lines -->
+  <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#C58B8A" stroke-width="0.5" opacity="0.12" />
+  </pattern>
+  <rect width="600" height="380" fill="url(#gridPattern)" rx="16" />
+
+  <!-- Main Portal Window Frame -->
+  <g filter="url(#shadowCh)" transform="translate(60, 45)">
+    <!-- Browser/Window Mockup -->
+    <rect width="480" height="290" rx="12" fill="url(#cardGrad)" stroke="rgba(197, 139, 138, 0.3)" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="480" height="38" rx="12" fill="#FAF5F2" />
+    <circle cx="22" cy="19" r="5" fill="#F7DDE5" stroke="#C58B8A" stroke-width="0.8" />
+    <circle cx="38" cy="19" r="5" fill="#F9E4D5" stroke="#C58B8A" stroke-width="0.8" />
+    <circle cx="54" cy="19" r="5" fill="#DFECF7" stroke="#C58B8A" stroke-width="0.8" />
+    
+    <!-- URL Bar -->
+    <rect x="80" y="10" width="260" height="18" rx="9" fill="#FFFBF8" stroke="#E8E0F5" stroke-width="1" />
+    <text x="96" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#6C6674">campushub.portal.edu/dashboard</text>
+
+    <!-- Portal Sidebar -->
+    <rect x="0" y="38" width="110" height="252" fill="#FCFAF8" border-right="1px solid #F7DDE5" />
+    <line x1="110" y1="38" x2="110" y2="290" stroke="#F0E8E4" stroke-width="1" />
+    
+    <rect x="15" y="55" width="80" height="12" rx="4" fill="#E8E0F5" />
+    <rect x="15" y="78" width="65" height="10" rx="3" fill="#F9E4D5" opacity="0.8" />
+    <rect x="15" y="96" width="70" height="10" rx="3" fill="#DFECF7" opacity="0.8" />
+    <rect x="15" y="114" width="60" height="10" rx="3" fill="#F7DDE5" opacity="0.8" />
+    <rect x="15" y="132" width="75" height="10" rx="3" fill="#E8E0F5" opacity="0.8" />
+
+    <!-- Dashboard Content Area -->
+    <!-- Welcome Banner -->
+    <rect x="126" y="52" width="338" height="58" rx="8" fill="#F7DDE5" opacity="0.55" />
+    <text x="142" y="74" font-family="'Playfair Display', Georgia, serif" font-size="14" font-weight="700" fill="#34313A">CampusHub Portal</text>
+    <text x="142" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#6C6674">Centralized platform for campus updates &amp; academic events</text>
+
+    <!-- Cards Row -->
+    <rect x="126" y="122" width="105" height="74" rx="8" fill="#FFFBF8" stroke="#DFECF7" stroke-width="1.5" />
+    <circle cx="146" cy="142" r="10" fill="#DFECF7" />
+    <rect x="140" y="162" width="65" height="8" rx="3" fill="#34313A" opacity="0.75" />
+    <rect x="140" y="176" width="45" height="6" rx="2" fill="#C58B8A" opacity="0.6" />
+
+    <rect x="242" y="122" width="105" height="74" rx="8" fill="#FFFBF8" stroke="#F9E4D5" stroke-width="1.5" />
+    <circle cx="262" cy="142" r="10" fill="#F9E4D5" />
+    <rect x="256" y="162" width="65" height="8" rx="3" fill="#34313A" opacity="0.75" />
+    <rect x="256" y="176" width="45" height="6" rx="2" fill="#C58B8A" opacity="0.6" />
+
+    <rect x="358" y="122" width="106" height="74" rx="8" fill="#FFFBF8" stroke="#E8E0F5" stroke-width="1.5" />
+    <circle cx="378" cy="142" r="10" fill="#E8E0F5" />
+    <rect x="372" y="162" width="65" height="8" rx="3" fill="#34313A" opacity="0.75" />
+    <rect x="372" y="176" width="45" height="6" rx="2" fill="#C58B8A" opacity="0.6" />
+
+    <!-- Bottom Activity Feeds -->
+    <rect x="126" y="208" width="338" height="64" rx="8" fill="#FFFBF8" stroke="#EFE7E4" stroke-width="1" />
+    <rect x="140" y="222" width="180" height="8" rx="3" fill="#34313A" opacity="0.8" />
+    <rect x="140" y="238" width="280" height="6" rx="2" fill="#6C6674" opacity="0.5" />
+    <rect x="140" y="252" width="220" height="6" rx="2" fill="#6C6674" opacity="0.4" />
+  </g>
+</svg>

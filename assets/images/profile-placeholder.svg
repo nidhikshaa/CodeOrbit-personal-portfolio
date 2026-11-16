@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBF8" />
+      <stop offset="50%" stop-color="#F7DDE5" />
+      <stop offset="100%" stop-color="#E8E0F5" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C58B8A" />
+      <stop offset="100%" stop-color="#A46968" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F9E4D5" />
+      <stop offset="50%" stop-color="#C58B8A" />
+      <stop offset="100%" stop-color="#DFECF7" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind Avatar -->
+  <circle cx="200" cy="200" r="185" fill="#F7DDE5" opacity="0.45" filter="url(#softGlow)" />
+  <circle cx="200" cy="200" r="170" fill="url(#bgGrad)" />
+
+  <!-- Elegant Decorative Rings -->
+  <circle cx="200" cy="200" r="162" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.8" />
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#C58B8A" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Stylized Elegant Silhouette & Monogram -->
+  <!-- Subtle Soft Silhouette Body -->
+  <path d="M120 310 C120 250, 150 220, 200 220 C250 220, 280 250, 280 310 Z" fill="#E8E0F5" opacity="0.75" />
+  <circle cx="200" cy="165" r="48" fill="#F9E4D5" />
+  
+  <!-- Stylized Hair Flow / Feminine Accent -->
+  <path d="M165 140 C175 110, 225 110, 235 140 C240 160, 240 185, 236 200 C230 185, 220 175, 200 175 C180 175, 170 185, 164 200 C160 185, 160 160, 165 140 Z" fill="#C58B8A" opacity="0.65" />
+
+  <!-- Botanical / Laurel Delicate Accent Branch -->
+  <path d="M135 220 Q145 200 160 210 Q145 220 135 220" fill="#C58B8A" opacity="0.5" />
+  <path d="M265 220 Q255 200 240 210 Q255 220 265 220" fill="#C58B8A" opacity="0.5" />
+
+  <!-- Monogram Medallion -->
+  <circle cx="200" cy="245" r="32" fill="#FFFBF8" stroke="#C58B8A" stroke-width="1.5" filter="url(#softGlow)" />
+  <text x="200" y="253" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="700" fill="#A46968" text-anchor="middle" letter-spacing="2">NM</text>
+
+  <!-- Replace Hint Badge -->
+  <rect x="100" y="335" width="200" height="28" rx="14" fill="#34313A" opacity="0.85" />
+  <text x="200" y="353" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="500" fill="#FFFBF8" text-anchor="middle">Photo Placeholder (Replaceable)</text>
+</svg>
